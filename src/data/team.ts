@@ -8,8 +8,11 @@ const teamMembers: TeamMember[] = [
         social: [
             {
                 name: 'GitHub',
-                icon : '',
                 url: 'https://github.com/erikaheidi'
+            },
+            {
+                name: 'Twitter',
+                url: 'https://twitter.com/erikaheidi'
             },
         ],
     },
@@ -20,8 +23,11 @@ const teamMembers: TeamMember[] = [
         social: [
             {
                 name: 'GitHub',
-                icon : '',
                 url: 'https://github.com/JustSteveKing'
+            },
+            {
+                name: 'Twitter',
+                url: 'https://twitter.com/JustSteveKing'
             },
         ],
     },
@@ -32,8 +38,11 @@ const teamMembers: TeamMember[] = [
         social: [
             {
                 name: 'GitHub',
-                icon : '',
                 url: 'https://github.com/WendellAdriel'
+            },
+            {
+                name: 'Twitter',
+                url: 'https://twitter.com/wendell_adriel'
             },
         ],
     },
