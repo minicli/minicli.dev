@@ -1,0 +1,27 @@
+---
+import type Social from '../types/Social';
+
+export interface Props {
+    name: string;
+    image: string;
+    role: string;
+    social: Social[];
+}
+
+const { name, image, role, social } = Astro.props;
+---
+
+<li>
+    <img class="mx-auto h-56 w-56 rounded-full" src={image} alt={name}>
+    <h3 class="mt-6 text-xl font-extrabold leading-7 tracking-tight text-gray-900 dark:text-gray-100 text-center">{name}</h3>
+    <p class="text-base leading-6 text-tertiary text-center font-bold">{role}</p>
+    <ul role="list" class="mt-6 flex justify-center gap-x-6">
+        {social.map((item: Social) => <li>
+            <a href={item.url} class="text-gray-400 hover:text-gray-500">
+                <span class="sr-only">{item.name}</span>
+                <!-- TODO: Add icons -->
+                <span>{item.icon}</span>
+            </a>
+        </li>)}
+    </ul>
+</li>
