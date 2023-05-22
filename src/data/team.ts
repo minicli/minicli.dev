@@ -1,4 +1,6 @@
-export default [
+import type TeamMember from '../types/TeamMember';
+
+const teamMembers: TeamMember[] = [
     {
         name: 'Erika Heidi',
         image: 'https://github.com/erikaheidi.png',
@@ -36,3 +38,5 @@ export default [
         ],
     },
 ]
+
+export default teamMembers;
