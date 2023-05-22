@@ -1,0 +1,11 @@
+---
+import team from '../data/team.js';
+import Social from '../types/Social';
+import TeamMember from '../components/TeamMember.astro';
+---
+
+<section class="mx-auto max-w-7xl px-4 py-32 text-gray-800 dark:text-gray-200 md:px-0">
+    <div class="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 sm:gap-y-16 md:grid-cols-3 [&:not(:focus-visible)]:focus:outline-none">
+        {team.map((member: Social) => <TeamMember name={member.name} role={member.role} social={member.social} image={member.image} />)}
+    </div>
+</section>

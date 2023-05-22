@@ -1,0 +1,30 @@
+---
+import Social from '../types/Social';
+
+export interface Props {
+    name: string;
+    image: string;
+    role: string;
+    social: Social[];
+}
+
+const { name, image, role, social } = Astro.props;
+---
+
+<div>
+    <div class="group relative h-[17.5rem] transform overflow-hidden rounded-4xl">
+        <div class="absolute bottom-6 left-0 right-4 top-0 rounded-4xl border transition duration-300 group-hover:scale-95 xl:right-6 border-tertiary"></div>
+        <div class="absolute inset-0 bg-indigo-50" style="clip-path:url(#:R9m:-0)">
+            <img alt="" width="1120" height="560" class="absolute inset-0 h-full w-full object-cover transition duration-300 group-hover:scale-110" src={image}>
+        </div>
+    </div>
+    <h3 class="mt-8 font-display text-xl font-bold tracking-tight text-slate-900">
+        {name}
+    </h3>
+    <p class="mt-1 text-base tracking-tight text-slate-500">
+        {role}
+    </p>
+    <ul>
+
+    </ul>
+</div>
